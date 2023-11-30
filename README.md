@@ -45,50 +45,75 @@ Create an [AWS Account](https://aws.amazon.com/)
 
 ### Step 2
 
-Access AWS Management Console
+Access [AWS Management Console](https://aws.amazon.com/console/)
 
 ### Step 3
 
 Launch an EC2 Instance
 
+Docs: [Lanching an Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance)
+
 ### Step 4
 
 Open port for ssh connection 22 TCP and 5000 TCP for Flask server
 
+Docs: [Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
+
 ### Step 5
+
 Connect to your EC2 instance using SSH
 
-### Step 6
+Docs: [Connecting to Your Linux Instance Using SSH](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
-Install Flask on your EC2 Instance:
-Connect to your EC2 instance using SSH and install Flask.
+## Account and Instance Setup
 
-### Step 7
+### Step 1
 
-Create a Simple Flask App:
-Create a simple flask app that prints hello world on the index endpoint
+Install Docker on your EC2 instance via snap
 
-### Step 8
+```bash
+sudo apt update # this updates the package manager
+sudo apt install snapd # this installs snap
+sudo snap install docker # this installs docker
+sudo groupadd docker # this creates a docker group
+sudo usermod -aG docker $USER # this makes docker run without sudo
+newgrp docker # this makes docker run without sudo
+```
+
+### Step 2
+
+Transfer your Flask app to your EC2 instance
+
+```bash
+scp -i <path_to_pem_file> -r <path_to_flask_app> ubuntu@<ec2_public_ip>:~/
+```
+
+### Step 3
 
 Configure Firewall (Security Group):
 Make sure that your EC2 instance's security group allows traffic on the port you're using for Flask (default is 5000). Configure the inbound rules accordingly.
 
-### Step 9
+[How to configure security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
 
-Run the Flask App:
-Run your Flask app on your EC2 instance. Make sure to run it on 0.0.0.0 so it's accessible from the outside:
+### Step 4
 
-### Step 10
+Run the Flask app on your EC2 instance
+
+```bash
+docker-compose up --build
+```
+
+### Step 5
 
 Access the App:
 Visit your EC2 instance's public IP address or DNS followed by the port number (default is 5000)
 
-### Step 11
-
-Set up Gunicorn
-For production use, it's recommended to use a production-ready server like Gunicorn.
+Docs: [Public IPv4 addresses and external DNS hostnames](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses)
 
 ### Bonus
 
 Set up Nginx as a Reverse Proxy (Optional but Recommended):
 For better performance and security, consider setting up Nginx as a reverse proxy
+
+Set up Gunicorn
+For production use, it's recommended to use a production-ready server like Gunicorn.
