@@ -82,11 +82,13 @@ newgrp docker # this makes docker run without sudo
 
 ### Step 2
 
-Transfer your Flask app to your EC2 instance
+Transfer /app dir to your EC2 instance
 
 ```bash
-scp -i <path_to_pem_file> -r <path_to_flask_app> ubuntu@<ec2_public_ip>:~/
+scp -i <path_to_pem_file> -r <path_to_app_dir> ubuntu@<ec2_public_ip>:/home/ubuntu
 ```
+
+Docs: [What is a Pem file](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
 ### Step 3
 
