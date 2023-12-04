@@ -75,6 +75,7 @@ Install Docker on your EC2 instance via snap
 sudo apt update # this updates the package manager
 sudo apt install snapd # this installs snap
 sudo snap install docker # this installs docker
+sudo snap refresh docker --channel=latest/edge
 sudo groupadd docker # this creates a docker group
 sudo usermod -aG docker $USER # this makes docker run without sudo
 newgrp docker # this makes docker run without sudo
