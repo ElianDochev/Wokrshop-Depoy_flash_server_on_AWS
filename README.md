@@ -3,7 +3,7 @@ Eliyan Dochev</a>!</a> </h1>
 
 <h2 align="center">Get started with React and Gatsby</h3>
 
-<h3 align="center" > <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30" height="30" style="margin-right: 10px;">Get in touch with us 🤝 </h3>
+<h3 align="center" > <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30" height="30" style="margin-right: 10px;">Get in touch with me 🤝 </h3>
 
 <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
   <p align="center">
