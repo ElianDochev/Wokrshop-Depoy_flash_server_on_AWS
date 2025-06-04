@@ -14,7 +14,7 @@ Eliyan Dochev</a> and <a href="https://github.com/VividVice" target="blank">Vasi
           <a style="margin-left: 10px;" target="_blank" href="https://github.com/ElianDochev">
   		<img  style="width: 40px; height: 40px" src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
   		<a style="margin-left: 5px;" target="_blank" href="mailto:eliyan.dochev@epitech.eu">
-  					<img style="width: 40px; height: 40px" src="https://image.similarpng.com/very-thumbnail/2021/09/Outlook-icon-on-transparent-background-PNG.png" ></a>
+  					<img style="width: 40px; height: 40px" src="https://img.icons8.com/?size=256&id=1fmYJMlAzKXa&format=png" ></a>
         </div>
   </p>
 
