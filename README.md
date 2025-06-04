@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋 We are <a href="https://github.com/ElianDochev" target="blank">
-Eliyan Dochev</a> and <a href="https://github.com/VividVice" target="blank">Vasiliy Novikov!</a> </h1>
+<h1 align="center">Hi 👋 I am <a href="https://github.com/ElianDochev" target="blank">
+Eliyan Dochev</a>!</a> </h1>
 
 <h2 align="center">Get started with React and Gatsby</h3>
 
