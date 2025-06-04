@@ -18,20 +18,6 @@ Eliyan Dochev</a> and <a href="https://github.com/VividVice" target="blank">Vasi
         </div>
   </p>
 
-  <p align="center">
-  <h1 align="center"> Vasiliy Novikov </h1>
-
-   <div align="center"  class="icons-social" style="margin-left: 10px;">
-          <a style="margin-left: 10px;"  target="_blank" href="#!/">
-  			<img  style="width: 40px; height: 40px" src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"></a>
-          <a style="margin-left: 10px;" target="_blank" href="#!">
-  		<img  style="width: 40px; height: 40px" src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
-  		<a style="margin-left: 5px;" target="_blank" href="mailto:#!">
-  					<img style="width: 40px; height: 40px" src="https://image.similarpng.com/very-thumbnail/2021/09/Outlook-icon-on-transparent-background-PNG.png" ></a>
-        </div>
-  </p>
-</div>
-
 # Introduction
 
 In this workshop, you will learn how to deploy a simple Flask application on AWS EC2. You will also learn how to
